@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*
+        display:block;块状元素
+        display:inline;行内元素
+        多个块状元素之间上下排列,在没有定义宽度的前提下,会一直延伸到包含它的父标签的边界
+        块状元素可以定义宽高,padding值,margin值
+        多个行内元素之间排列在一行,宽度(高度)就是容纳下内容的最小宽度(高度)
+        行内元素不可以设置宽,高,padding值,margin值设置,上下不起作用,作用会起作用,但是位置不会改变
+
+        块状标签与行内标签之间可以通过display这个属性来改变它原有的属性
+
+        display :inline-block
+
+        这个元素在网页里面就会变成块状的盒子,同时又会像内联元素那样在一行显示
+        也就是说设置完了这个属性后,将即会有块状盒子的特性,又会有行内元素的特性
+
+
+
+        */
+    </style>
+</head>
+<body>
+<p>以下是块状元素在页面的排版</p>
+<div>
+    <img src="../cssOther/images/blue.jpg" width="100px"  >
+</div>
+<div>
+    <img src="../cssOther/images/blue.jpg" width="100px"  >
+</div>
+<div>
+    <img src="../cssOther/images/blue.jpg" width="100px"  >
+</div>
+<p>以下是行内元素在页面的排版</p>
+<span>
+    <img src="../cssOther/images/blue.jpg" width="100px"  >
+</span>
+<span>
+    <img src="../cssOther/images/blue.jpg" width="100px"  >
+</span>
+<span>
+    <img src="../cssOther/images/blue.jpg" width="100px"  >
+</span>
+</body>
+</html>
+

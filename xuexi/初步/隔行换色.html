@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>隔行换色</title>
+    <style type="text/css">
+        body,div,li{
+            margin: 0;
+            padding: 0;
+            font-family: Airal, "Microsoft YaHei";
+            font-size: 12px;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        #cy{
+            margin: 10px auto 0;
+            padding: 10px;
+            width: 500px;
+            border: 1px solid #d9ceba;
+            border-radius: 10px;
+        }
+        #cy li{
+            height: 30px;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        #cy li:hover{
+            background:red ;}
+        .c1{
+            background: #36dd89;
+        }
+        .c2{
+            background: #2035e1;
+        }
+        .c3{
+            background: #faff4d;
+        }
+        .c4{
+            background: #ff66ff;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="cy">
+ <ul>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+     <li>这是我第一次认真的自己做东西</li>
+ </ul>
+</div>
+<script type="text/javascript">
+//    var olist=document.getElementById("cy")
+//    var olis=olist.getElementsByTagName("li")
+//    for(var i=0;i<olis.length;i++) {
+//        var oli = olis[i];
+//        i % 2 === 0 ? oli.className = "c1" : oli.className = "c2";或者这样写
+//           i % 2 === 0   lis[i].background="white"
+//    }
+
+    var olist=document.getElementById("cy")
+    var olis=olist.getElementsByTagName("li")
+    for(var i=0;i<olis.length;i++) {
+        var oli = olis[i];
+//        i % 2 === 0 ? oli.className = "c1" : oli.className = "c2";
+
+//        if (i%2===0){oli.className="c1";
+//        }
+//        else{
+//            oli.className="c2";
+//        }
+        switch (i%4){
+            case 0:
+                oli.className="c1";
+                break
+            case 1:
+                oli.className="c2";
+                break
+            case 2:
+                oli.className="c3";
+                break
+            default:
+                 oli.className="c4"
+
+        }
+
+
+    }
+
+</script>
+
+</body>
+</html>

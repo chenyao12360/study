@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>样式层叠问题</title>
+    <style>
+        /*p{*/
+            /*font-size: 18px;*/
+            /*color: #87c6ff;*/
+            /*text-decoration: underline;*/
+        /*}*/
+        /*span{*/
+            /*color:#ccc;*/
+        /*}*/
+        /*.blue{*/
+            /*color: blue;*/
+        /*}*/
+        /*#orange{*/
+            /*color: orange;*/
+        /*}*/
+        /*#yellow{*/
+            /*color: #ffff00;*/
+        /*}*/
+    p span b{
+        color: green;
+    }
+    p b {
+        color: #ff0000;
+    }
+    /*
+    1.指定的样式优先级别高于继承来的样式
+    2.#ID>类选择器>标记选择器
+    3 嵌套越具体,层次越清晰,优先级别越高
+    4.权重相加来判断:
+    行内样式的权重值:1000
+    ID选择器的权重值:100;
+    类选择器的权重:10;
+    标记选择器的权重:1
+    */
+
+      p#blue{
+          color: #ff0000;
+      }
+     #blue{
+        color: green ;
+     }
+
+
+
+    </style>
+</head>
+<body>
+<p>我都学完了,我就是大神了!<span>这字体大小是多少呢?<b>这是b标签</b></span></p>
+<p id="blue" id="orange">这是第一段文字</p>
+<p class="blue">这是第二段文字</p>
+<h3 class="purple">当青春与校园再次相遇，匆匆那年错过的，京东派我们帮你找回来。</h3>
+</body>
+</html>

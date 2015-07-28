@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>层级嵌套</title>
+    <style>
+        #a1 .a3{color: orange}
+        .a1 .a2 span.a3{color: blue}
+        .a1 .a2 #a3{color: green}
+        /*#a1 .a2 .a3{color: orange}*/
+        /*.a1 #a2 .a3{color: blue}*/
+        /*.a1 .a2 #a3{color: green}*/
+        /*span.a3{*/
+            /*color: #ff0000;*/
+        /*}*/
+        /*#a3{*/
+            /*color: #ffff00;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="a1" id="a1">
+    <p class="a2" id="a2">
+        <span class="a3" id="a3">我是什么颜色?</span>
+    </p>
+</div>
+</body>
+</html>

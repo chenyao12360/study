@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隔行变色</title>
+    <style type="text/css">
+        body,div,ul,li {
+            margin: 0;
+            padding: 0;
+            font-family: Airal, "Microsoft YaHei";
+            font-size: 12px;
+        }
+         ul,li{
+             list-style: none;
+         }
+        #cy{
+            margin: 10px auto 0;
+            padding: 10px;
+            width: 500px;
+            border: 1px solid #dd312e;
+            border-radius: 10px;
+            /*background: -webkit-linear-gradient(left, red , blue);*/
+        }
+        #cy li {
+            height: 30px;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        #cy li:hover{
+            background:red ;}
+        .c1{
+            background: #36dd89;
+        }
+        .c2{
+            background: #2035e1;
+        }
+        .c3{
+            background: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="cy">
+    <ul>
+
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+        <li>珠峰培训2015年JS基础视频</li>
+    </ul>
+
+    </div>
+    <script type="text/javascript">
+        var olist=document.getElementById("cy")
+        var olis=olist.getElementsByTagName("li")
+        for(var i=0;i<olis.length;i++) {
+            var oli = olis[i];
+            i % 2 === 0 ? oli.className = "c1" : oli.className = "c2";
+            switch (i % 3) {
+                case 0:
+                    oli.className = "c1"
+                    break
+                case 1:
+                    oli.className = "c2"
+                    break
+                default :
+                    oli.className = "c3"
+            }
+        }
+
+
+
+
+
+</script>
+</body>
+</html>

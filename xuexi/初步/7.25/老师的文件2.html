@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .test{
+            width: 100px;
+            height: 100px;
+            background: #fff000;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<!--
+    网页的组成
+      --html 网页的内容
+           1、标签语义化
+           2、行内和块状元素
+      --css  装饰网页内的内容
+           1、行内样式  写在行内的style属性内
+           2、内嵌式  写在head标签中的style标签内
+           3、外链样式
+      --js   js负责网页内的交互和效果
+           1、行内 和css一样写在行内
+           2、内嵌 放在script标签内，尽量放在网页底部，因为网页内的代码是从上到下从左到右，js是操作网页内元素和样式的，所以要等元素都加载完成以后再执行js代码
+           3、外链 script标签的src属性外链文件位置(外链脚本标签内的js代码是不被执行的)
+
+
+
+-->
+<div style="width:100px; height: 100px;" onclick="alert(333)">
+    1
+</div>
+<div class="test">
+    2
+</div>
+<div class="test2">
+    3
+</div>
+<div id="zhufeng">
+    <p>my name is tianxi, my qq is 121170784</p>
+    <span>asdf</span>
+</div>
+
+
+
+<script type="text/javascript">
+    /*alert(444);*/
+</script>
+<script type="text/javascript" src="js/common.js">
+    alert(000);  //不被执行的
+</script>
+
+</body>
+<ml>//alert(999);
+    //console.log("welcome to zhufengpeixun!!");
+    var zhufeng = document.getElementById("zhufeng");
+
+    //console.log(zhufeng.innerText);
+    //console.log(zhufeng.innerHTML);
+    document.write("<p class='test2'>crazy</p>");
+
+    var num = 88;
+    var num1 = 99;
+    var num2 = num1;
+    //console.log(num2);
+    //console.log(parseInt("fff222"));
+    //console.log(parseFloat("iiiooo0.222"));
+    var ss = {
+    name:"gengyinpeng",
+    age: 40,
+    gender: "male",
+    weight: "99kg"
+    };
+    ╰依然丶微笑  22:19:13
+    //console.log(ss.weight);
+    //console.log(ss['weight']);
+    //查增删改
+    //添加属性
+    ss.hobby = "teacher,swimming";
+    //console.log(ss);
+    ss.hobby = "beautifulgirl";
+    //console.log(ss);
+    delete ss.hobby;
+    delete ss['name'];
+    //console.log(ss);
+
+    var num1 = 1;
+    var num2 = num1; /ar num2 = 1;
+    num2 ++; // num2 = num2 +1; num2 += 1;
+    //console.log(num2);
+    //console.log(num1);
+    //对象
+    var obj1 = {    //1、浏览器里  新开辟了一块区域  404
+    //2、obj1这个变量里面保存的地址;
+    //3、声明obj2 = obj1; 相当于把obj1 存下来的地址赋值给obj2;
+    name : 'gengyingpeng',
+    age: 40
+    }
+
+    var obj2 = obj1;
+    obj2.age = 45;
+    //console.log(obj2['age']); //45
+
+    //console.log(obj1.age);/?
+
+    var person1 = {name:'zhufeng',age:40};
+    var person2 = person1;
+    var person3 = person2;
+    person3.age = 45;
+
+    var person2 = { name:"allen", age:25};
+    if(person2.age == 25){
+    console.log(person1.age);
+    }else if(person2 == 40){
+    console.log(person3.age);
+    }else{
+    console.log(person2.age);
+    }
+    ╰依然丶微笑  22:19:33
+    var str = "999fff";
+    switch (parseFloat(str)){
+    case "999":
+    // alert(typeof(parseFloat(str)));
+    break;
+    case 999:
+    // alert(typeof (parseFloat(str)));
+    break;
+    //default
+    }
+
+    var num = 3.5;
+    while (num<=5){
+    num++;
+    }
+    console.log(num);
+
+    //5>6 ? console.log("right") : console.log("wrong");
+    var zhufeng = 5 > 6 ? 5 : 6;
+    //5 < 6 && alert("yes");
+    //console.log(zhufeng)
+
+
+    for(var i=0; i<5; i++){
+    console.log(i);
+    if(i < 3){
+    console.log(i);
+    continue;
+    }else{
+    i++;
+    break;
+    }
+    i++;
+    }
+    console.log(i+"我是最后输出的在外面");
+
+    var obj  = {
+    name: 'rose',
+    age : 23,
+    gender: "female",
+    hobby: "shopping"
+    }
+    //obj.name;
+
+    for (var attr in obj){
+    //console.log(typeof(attr));
+    //console.log(attr +"==="+obj[attr]);
+    if(attr == "age"){
+    console.log(attr);
+    }
+    }
+
+    var i = 0;
+    while(i<=5){
+    console.log(i);
+    i++;
+    }
+    console.log(i);

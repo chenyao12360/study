@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>开关灯</title>
+    <style type="text/css">
+        html,body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body id="cy" style="background-color: white">
+<script type="text/javascript">
+//    var oBoy=document.getElementById("cy");
+//    oBoy.onclick=function() {
+//        var bg = oBoy.style.backgroundColor;
+//        if (bg === "white") {
+//            oBoy.style.backgroundColor = "yellow"
+//        }
+//        else {
+//            oBoy.style.backgroundColor = "white"
+//        }
+//    }
+////        var oBoy=document.getElementById("cy")
+//        oBoy.onclick=function(){
+////            console.log(this)
+//        var bg=this.style.backgroundColor;
+//        if(bg==="white"){
+//        this.style.backgroundColor="yellow"
+//        }
+//        else {
+//              this.style.backgroundColor="white"
+//        }
+//    }
+    var oBoy=document.getElementById("cy");
+     oBoy.onclick=function(){
+         var bg = oBoy.style.backgroundColor;
+         switch(bg) {
+             case"white":
+                 oBoy.style.backgroundColor = "blue"
+                 break;
+             case"blue":
+                 oBoy.style.backgroundColor = "yellow"
+                 break;
+             case"yellow":
+                 oBoy.style.backgroundColor = "gray"
+                 break;
+             case"gray":
+                 oBoy.style.backgroundColor = "green"
+                 break;
+             default:
+                 oBoy.style.backgroundColor = "white"
+                 break
+         }
+
+     }
+</script>
+
+</body>
+</html>

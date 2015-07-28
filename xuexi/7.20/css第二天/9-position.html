@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding:0;
+            font-size:14px;
+            font-family: Airal,"Microsoft YaHei";
+            background:#f7a4af;
+        }
+        a{
+            text-decoration: none;
+        }
+        .layout{
+            border: 1px solid #ccc;
+            background:#f7f7f7;
+            width: 260px;
+        }
+        .layout dl{
+            margin: 0;
+            background: #fff;
+            padding: 15px 0 15px 15px;
+            position: relative;
+        }
+        .layout dl dd{
+            margin: 0;
+        }
+        .layout dl dt{
+            float: left;
+            margin-right: 10px;
+            display: inline;/*这是兼容ie6*/
+        }
+
+        .layout dl dd.time{
+            padding: 5px 0 15px 0;
+            font-size: 12px;
+        }
+
+        .layout dl dd.num{
+            padding-bottom:30px;
+        }
+        .layout dl dd.last{
+            background: #f5f5f5;
+            line-height: 26px;
+            position: absolute;
+            left: 0;
+            bottom: -26px;
+        }
+        .layout dl dd.last a{
+            padding: 0 23px;
+            color: #5c5c5c;
+        }
+
+    </style>
+</head>
+<body>
+<div class="layout">
+    <dl>
+        <dt><img src="images/cloth.jpg"> </dt>
+        <dd class="time"><strong>匡威2015夏男短袖</strong></dd>
+        <dd class="num">近7天通城热销</dd>
+        <dd ><b>已销售27件</b></dd>
+        <dd class="last"><a href="##">收藏</a><a href="##">喜欢</a><a href="##">我要自定义</a></dd>
+    </dl>
+</div>
+</body>
+</html>

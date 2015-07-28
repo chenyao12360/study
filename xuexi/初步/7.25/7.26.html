@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>function</title>
+<style>
+         body,div,ul,li,span{
+            margin: 0;
+            padding: 0;
+             list-style: none;
+         }
+         .nine{
+             width: 900px;
+             margin: 30px auto;
+             border: 1px solid#444444;
+             padding: 10px;
+         }
+        .nine ul li{
+            height: 30px;
+            line-height: 30px;
+        }
+        .nine ul span{
+            display: inline-block;width: 100px;height: 30px;text-align: center;
+        }
+        .c1{
+            background: #ff66ff;
+        }
+       .c2{
+           background: #36dd89;
+       }
+       .c3{
+           background: #312aff;
+       }
+
+    </style>
+
+</head>
+<body>
+<div class="nine" id="nine">
+    <ul id="cy">
+        <li>
+            <span></span>
+        </li>
+
+    </ul>
+</div>
+
+</body>
+<script>
+    var oDiv=document.getElementById("nine");
+    var str="";
+    str +="<ul>";
+        for(var i=1;i<=9;i++){
+            var tempClass =null
+            if(i%2===0){
+                tempClass="c1"
+            }
+            else{
+                tempClass="c2"
+            }
+        str +="<li class="+tempClass+">";
+            for(var j=1;j<=i;j++){
+                str+="<span>";
+                    str +=j+"*"+i+"="+i*j;
+                str+="</span>";
+            }
+        str +="</li>";
+    }
+    str +="</ul>";
+    oDiv.innerHTML=str;
+//    var oLis=oDiv.getElementsByTagName("li");
+//    for(var i=0;i<oLis.length;i++);
+//      oLis[i].onmouseover = function () {
+//          oLis.className = "c3";
+//          oLis[i].onmouseover = function () {
+//             oLis.className = "c3";
+//          }
+//      }
+
+</script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            padding: 30px;
+        }
+        .wrap{
+            background: #87c6ff;
+            border: 1px solid #000000;
+            padding: 20px;
+            position: relative;
+
+        }
+        .wrap div{
+            background: #f7a4af;
+            padding: 10px;
+            border:1px dashed #ffff00;
+
+        }
+        .inner-1{
+            position: absolute;
+            left:50px;
+            top:30px;
+            z-index: 1;
+        }
+        .inner-2{
+            position: absolute;
+            left: 30px;
+            top: 40px;
+        }
+
+
+    /*
+    position:static ;默认显示的
+    position:relative;相对定位 主要是相对于自己进行偏移,还是在文档流中存在,并没有脱离文档流,周围的元素还是认为这个标签在文档流中的位置
+    position:absolute; 绝对定位 搞清楚以谁作为基准进行偏移的  是以已经定位的最近的包含块(祖先节点)进行偏移
+    已经定位是指定义了定位这个css样式(除了postion:static以外)的祖先节点
+    包含块是指包围着它的所有的祖先节点
+    如果没有找到就会以浏览器窗口为基准进行偏移
+    宽度自动收缩至内容的宽度
+    position:fixed 固定定位  以浏览器窗口为基准进行偏移
+    */
+
+
+    </style>
+</head>
+<body>
+<div class="wrap clearfx">
+    <div class="layout">
+        <div class="inner-1">box1</div>
+        <div class="inner-2">box2</div>
+        <div class="inner-3">box3</div>
+        <p>dsfdsfsdfsdfsdfsdfsd</p>
+        <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p> <p>dsfdsfsdfsdfsdfsdfsd</p>
+
+    </div>
+
+</div>
+</body>
+</html>

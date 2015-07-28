@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script></script>
+    <scrip></scrip>
+</head>
+<body>
+
+</body>
+<script>
+//    var ary=[1,2,3,4,5,6,7,8,9,4,5,6,7,8,9,4,5,6,7,8,9,1,1,12,2,3]
+//    for(var i=0;i<ary.length-1;i++){
+//        var cur=ary[i];
+//        for(var j=i+1;j<ary.length;j++){
+//            if(cur===ary[j]){
+//                ary.splice(j,1);
+//                j--;
+//            }
+//        }
+//
+//    }
+//    console.log(ary)
+//var obj = {
+//    1:1,
+//    2:2
+//}
+//obj[1]=1;
+//console.log(obj[1])
+var ary=[1,1,3,4,5,6,7,8,5,8,9,4,5,6,7,8,9,4,5,6,7,8,9,1,1,12,2,3];
+
+
+
+var _ = {
+    quchong:function() {
+    var obj={},temArr=[]
+    for(var i=0;i<ary.length;i++){
+        //var cur=art[i];Arr
+        //if(obj[cur]==cur)
+
+        ary[i]==obj[ary[i]] ? '' : (obj[ary[i]]=ary[i]) && temArr.push(ary[i]);//&&技巧,push的返回值
+
+    }
+    return temArr
+    },
+    sort: function() {
+
+    },
+    chengfabiao: function() {
+
+    }
+}
+//var result = quchong(ary);
+//console.log(result);
+
+
+//function quchong(){
+//
+//}
+var ary=[1,1,3,4,5,6,7,8,5,8,9,4,5,6,7,8,9,4,5,6,7,8,9,1,1,12,2,3];
+
+var result  = _.quchong(ary);
+console.log(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    var ary=[1,2,1,2,1,2,1,2,2,1,3,4,5,67,5,4,3,5,6]
+//    for(var i=0;i<ary.length-1;i++){
+//        var cur=ary[i];
+//        for(var j=i+1;j<ary.length;j++){
+//            if(cur===ary[j]){
+//                ary.splice(j,1);
+//                j--;
+//            }
+//        }
+//    }
+//console.log(ary)
+
+
+//    for(var i=0;i<ary.length-1;i++){
+//        var cur=ary[i];
+//        for(var j=i+1;j<ary.length;j++){
+//            if(cur===ary[j]){
+//                ary.splice(j,1);
+//                j--;
+//            }
+//        }
+//    }
+//    console.log(ary)
+////
+//    var ary=[1,2,1,2,1,2,1,2,2,1,3,4,5,67,5,4,3,5,6]
+//    for(var i=0;i<ary.length-1;i++){
+//        var cur=ary[i];
+//        for(var j=i+1;j<ary.length;j++){
+//           if(cur===ary[j]){
+//               ary.splice(j,1);
+//               j--;
+//           }
+//        }
+//    }
+//    console.log(ary)
+</script>
+</html>

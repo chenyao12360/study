@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<style>-->
+        <!--@import url("css/index.css");-->
+    <!--</style>-->
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--
+        relationship的缩写 网页就知道你href导入进来的css文件是层叠样式表
+    -->
+    <!--行内式>内嵌式>外链式-->
+    <style>
+        p{
+            color: green;
+        }
+        .innerColor{
+            color: red;
+        }
+        .underlineStyle{
+             color: #ffff00;
+             text-decoration:underline;
+         }
+        #second{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<!--
+css思想:对什么"对象",找到相应的属性,对找到的这些属性进行设置
+css规范 p{font-size:12px;color:red}
+罗{
+    年龄:22;
+    身高:1.68;
+    体重:55;
+    性别:男;
+    兴趣爱好:打游戏
+}
+css与html主要是通过选择器联系起来的
+<p></p>
+
+css在页面显示的几种方式
+1.行内式
+2.内嵌式
+3.链接式{导入式,外链式}
+
+1.标记选择器
+2.类选择器
+3.ID选择器
+4.交集选择器
+5.并集选择器(群组选择器)
+6.后代选择器
+7.伪类选择器{ 属性伪类选择器,目标伪类选择器,结构伪类选择器,UI元素选择器}
+-->
+
+<p class="underlineStyle innerColor">第一行段落</p>
+<p id="second">第二行段落</p>
+<p class="innerColor underlineStyle">第三行段落</p>
+<p>第四行段落</p>
+
+</body>
+</html>

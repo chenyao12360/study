@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册账号</title>
+    <style>
+        div{
+            width: 660px;
+            background: #f8fdff;
+            padding: 5px 20px;
+            font:14px Arial,"Microsoft YaHei";
+
+        }
+        div table{
+            border-spacing: 15px;
+        }
+        div table th p{
+
+            font-size: 18px;
+            text-align: left;
+            padding-left: 10px;
+            font-weight: normal;
+            margin:0;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+
+        }
+        div table th p i{
+            border: 2px solid #6aaed5;
+            height: 15px;
+            position: absolute;
+            left: 0;
+            bottom:2px
+        }
+        div table th{
+            /*border-bottom: 1px solid #ccc;*/
+            padding-bottom: 10px;
+        }
+        input[type='text'],input[type="password"]{
+            width: 288px;
+            height: 28px;
+            border: 1px solid #ccc;
+            line-height: 28px;
+            padding-left: 10px;
+            border-radius:3px ;/*css3属性*/
+            box-shadow: 1px -1px 1px 0 #e4e9ef;
+        }
+        table tbody tr td{
+            font-size: 16px;
+        }
+        table tbody tr td.right{
+            text-align: right;
+
+        }
+        table tbody tr td.left{
+            text-align: left;
+            font-size: 12px;
+        }
+        table tbody tr td select{
+            width: 94px;
+            height: 22px;
+            border:1px solid #ccc;
+            color: #6492a2;
+        }
+        table tbody tr td .green{
+            color: #6492a2;
+        }
+        table tbody tr td .cBox{
+            width: 126px;
+            height: 51px;
+            border: 1px solid #ccc;
+            float: left;
+        }
+        table tbody tr td .cPic{
+            float: left;
+            margin-left: 10px;
+        }
+        table tbody tr td.box{
+            position: relative;
+        }
+        .changeOne{
+            position: absolute;
+            right:-47px;
+            bottom:6px;
+            font-size: 12px;
+        }
+        input[type="button"]{
+            width: 146px;
+            height: 46px;
+            border:1px solid #8dae83;
+            border-radius: 5px;
+            background:url(button_bg.jpg) repeat-x;
+            color:#fff;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 2px;
+            font-family: "Microsoft YaHei";
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <table  width="100%">
+        <thead>
+        <tr><th colspan="3"><p><i></i>注册账号</p></th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td width="20%" class="right">昵称</td>
+            <td width="47%"><input type="text" name="nikeName"/></td>
+            <td width="33%" class="left">请输入昵称<br><span class="green">试试新功能让手机号变QQ号</span></td>
+        </tr>
+        <tr>
+            <td class="right">密码</td>
+            <td><input type="password" name="password"/></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td class="right">确认密码</td>
+            <td><input type="password" name="pwdAgain"/></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="right">性别</td>
+            <td>
+
+            <input type="radio" name="sex" id="female"/><label for="female" class="green">男</label>
+            <input type="radio" name="sex" id="male" checked/><label for="male" class="green">女</label></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="right">所在地</td>
+            <td>
+                <select name="address">
+                    <option value="0">中国</option>
+                    <option value="1">国外</option>
+                </select>
+                <select name="address1">
+                    <option value="0">北京</option>
+                    <option value="1">河北</option>
+                </select>
+                <select name="address2">
+                    <option value="0">东城</option>
+                    <option value="1">昌平</option>
+                </select>
+
+            </td>
+            <td></td>
+        </tr>
+        <tr >
+            <td class="right">验证码</td>
+            <td class="box"><input type="text" name="check" class="cBox"/> <img src="check.jpg" class="cPic"><span class="changeOne green">点击换一张</span></td>
+            <td ></td>
+        </tr>
+
+        <tr>
+            <td class="right"></td>
+            <td><input type="checkbox" name="QQ" checked/>同时开通QQ空间</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="right"></td>
+            <td><input type="checkbox" name="agree" checked/>我已同意相关服务条款和隐私协议</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="right"></td>
+            <td><input type="button" value="立即注册"/></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

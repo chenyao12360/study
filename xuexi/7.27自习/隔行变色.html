@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>隔行变色</title>
+    <style type="text/css">
+        body div ul li{
+            margin: 0;
+            padding: 0;
+            font-family: Airal, "Microsoft YaHei";
+            font-size: 14px;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        ul li{
+            list-style: none;
+        }
+        #cy{
+            margin: 10px auto 0;
+            padding: 10px;
+            width: 500px;
+            border: 1px solid #d9ceba;
+            border-radius: 10px;
+        }
+        #cy li{
+            height: 30px;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        /*#cy li:hover{*/
+            /*background:red ;}*/
+        .c1{
+            background: #36dd89;
+        }
+        .c2{
+            background: #2035e1;
+        }
+        .c3{
+            background: #faff4d;
+        }
+        .c4{
+            background: #ff66ff;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="cy">
+    <ul>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+        <li>隔行变色隔行变色隔行变色隔行变色隔行变色</li>
+    </ul>
+</div>
+
+</body>
+<script>
+    var olist=document.getElementById("cy");
+    var olis=olist.getElementsByTagName("li");
+    for(i=0;i<olis.length;i++){
+         var oli=olis[i];
+//        i%2===0?oli.className="c1":oli.className="c2"
+        switch(i%3) {
+            case 0:
+                oli.className="c1";
+                break;
+            case 1:
+                oli.className="c2";
+                break;
+            default :
+                oli.className="c3";
+        }
+    }
+</script>
+</html>

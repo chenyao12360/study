@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>冒泡排序</title>
+</head>
+<body>
+
+</body>
+<script>
+    function sortAry(ary){
+        for(var i=0;i<ary.length-1;i++){
+            for(var j=0;j<ary.length-1-i;j++){
+                if(ary[j]>ary[j+1]){
+                    var cy=null;
+                    cy=ary[j];
+                    ary[j]=ary[j+1];
+                    ary[j+1]=cy;
+                }
+            }
+        }
+    }
+    ary=[12,323,12,313,434,34324,45,43,534,5,43,5,3453,453,45,35];
+    sortAry(ary)
+    console.log(ary)
+
+
+//    function sortAry (ary,type){
+//        for (var i=0;i<ary.length-1;i++){
+//            for(var j=0;j<ary.length-1-i;j++){
+//                if(ary[j]>ary[j+1]){
+//                    var temp=ary[j];
+//                    ary[j]=ary[j+1];
+//                    ary[j+1]=temp;
+//                }
+//            }
+//        }
+//        type===1?ary.reverse():void 0;
+//
+//        return ary;
+//    }
+//    var arr=[23,12,34,52,64,23,34,78,20,24,67,35];
+//    console.log(sortAry(arr))
+</script>
+
+</html>

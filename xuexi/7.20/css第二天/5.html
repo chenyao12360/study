@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*
+        在同一行的相邻盒子之间的距离是两个margin值相加
+        垂直的两个盒子之间的距离是交大的margin值为准,也就是说的是两个盒子"塌陷"合并
+        */
+
+        div{
+            width: 100px;
+            height: 50px;
+            background: #87c6ff;
+            border:1px dashed #ffff00;
+
+        }
+        .left{
+            margin-bottom: 60px;
+        }
+        .right{
+            background: #f7a4af;
+            margin-top: 40px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="left">这个左边的盒子</div><div class="right">这是右边的盒子</div>
+</body>
+</html>

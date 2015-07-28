@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        p{
+            font-size: 12px;
+
+        }
+        .secondStyle{
+            color: #87c6ff;
+            font-size: 18px;
+        }
+        p#secondId{
+            color:red;
+        }
+        /*区别于其他标签,需要特殊样式*/
+        p.secondStyle{
+           color: green;
+        }
+        /*
+        id选择器>类选择器>标记选择器
+        */
+        .thirdStyle,.h1Title,#spanStyle,div{
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+   <p>第一行段落</p>
+   <p  class="secondStyle" id="secondId">第二行段落</p>
+   <p class="thirdStyle">第三行段落</p>
+   <p>第一行段落</p>
+   <p>第一行段落</p>
+   <h1 class="h1Title" >这是H1标题</h1>
+    <span id="spanStyle" >这是一个span元素</span>
+    <div>这是一个块状元素</div>
+</body>
+</html>

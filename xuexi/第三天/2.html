@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font:22px Arial ,"Microsoft YaHei";
+        }
+        ul li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .ulBack{
+            height: 74px;
+            background: #cccccc;
+            text-align: center;
+        }
+        .ulBack li{
+            float: left;
+            width:300px;
+            height: 50px;
+            border-bottom: 1px solid #6b2f0b;
+            line-height: 50px;
+
+        }
+        .ulBack li a{
+            color: #000;
+            display: block;
+        }
+
+        .ulBack li.first,ul li.third{
+            background: green;
+        }
+        .ulBack li.second{
+            background: #ff66ff;
+        }
+        .ulBack li.fourth{
+            background:#53cdff;
+        }
+
+        /*子ul下的样式*/
+        .ulBack li ul{
+            background: #4478aa;
+            padding: 0;
+            display: none;
+        }
+        .ulBack li:hover ul{
+            display: block;
+        }
+        .ulBack li ul li{
+
+            border-bottom:none;
+        }
+        .ulBack li ul li a{
+            color: #fff;
+            display: block;
+        }
+        .ulBack li ul li a:hover{
+            background: #114577;
+            color: #7cbbee;
+        }
+        .clearfx:after,.clearfx:before{
+            width: 0;
+            height: 0;
+            display: block;
+            visibility: hidden;
+            clear: both;
+            content: "\0020";
+        }
+        .clearfx:after{
+            zoom: 1;
+        }
+    </style>
+</head>
+<body>
+<ul class="ulBack ">
+    <li class="first">
+        <a  href="##"> 首页</a>
+        <ul class="clearfx">
+            <li><a  href="##">div+css课程</a> </li>
+            <li><a  href="##">javascript课程</a></li>
+            <li><a  href="##">ajax课程</a></li>
+            <li><a  href="##">node课程</a></li>
+        </ul>
+    </li>
+    <li class="second">
+        <a  href="##">特色课程</a>
+        <ul class="clearfx">
+            <li><a  href="##">div+css课程</a></li>
+            <li><a  href="##">javascript课程</a></li>
+            <li><a  href="##">ajax课程</a></li>
+            <li><a  href="##">node课程</a></li>
+        </ul>
+    </li>
+    <li class="third">
+        <a  href="##">网店培训</a>
+        <ul class="clearfx">
+            <li><a  href="##">div+css课程</a></li>
+            <li><a  href="##">javascript课程</a></li>
+            <li><a  href="##">ajax课程</a></li>
+            <li><a  href="##">node课程</a></li>
+        </ul>
+    </li>
+    <li class="fourth">
+        <a  href="##">关于我们</a>
+        <ul class="clearfx">
+            <li><a  href="##">div+css课程</a></li>
+            <li><a  href="##">javascript课程</a></li>
+            <li><a  href="##">ajax课程</a></li>
+            <li><a  href="##">node课程</a></li>
+        </ul>
+    </li >
+</ul>
+</body>
+</html>

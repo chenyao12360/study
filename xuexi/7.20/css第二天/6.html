@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .wrap{
+            background: #87c6ff;
+            border: 1px solid #000000;
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+        .wrap div,.wrap p{
+            background: #f7a4af;
+            padding: 10px;
+            border:1px dashed #ffff00;
+            margin: 10px;
+        }
+        .inner-1,.inner-2{
+            float: left;
+        }
+        .inner-3{
+            float: left;
+        }
+
+
+        .wrap .clear{
+            clear: both;
+            width: 0;
+            height: 0;
+            background: none;
+            padding: 0;
+            border: 0;
+        }
+
+
+    </style>
+    <!--
+    设置完浮动以后,这个元素就自动脱离文档流,其他的相邻兄弟节点就会当他不存在一样,霸占他原来的位置
+    文字会围绕着浮动元素排列着
+    浮动的元素不会再伸缩,而收缩到容纳自身内容的宽度
+
+    如果一行的宽度显示不了所有的浮动的盒子,最右侧的浮动的盒子就会换行显示(如果是往左浮动,换行后还是浮动到左边,如果是往右浮动的,换行后是浮动到右边显示)
+
+    在文档流中的元素清理浮动后,文字不会再围绕着浮动元素而显示,会重新另起一行排列
+   最外层的盒子的高度(div.wrap的高度)等于在文档流中里层的盒子(div.clear)的内容的高度+清理完浮动后被浮动元素所占有的高度
+    -->
+</head>
+<body>
+   <div class="wrap clearfx">
+       <div class="inner-1">box1</div>
+       <div class="inner-2">box2</div>
+       <div class="inner-3">box3<br>box3<br>box3</div>
+       <p>邓超在微博晒出与孙俪举着鲜花的合影，留言称，“回家，收到媳妇送的花，问今天是什么日子，她说不是什么日子也可以送花啊。嗯，感动到了。是的，不是什么日子也是日子。”邓超在微博晒出与孙俪举着鲜花的合影，留言称，“回家，收到媳妇送的花，问今天是什么日子，她说不是什么日子也可以送花啊。嗯，感动到了。是的，不是什么日子也是日子。”邓超在微博晒出与孙俪举着鲜花的合影，留言称，“回家，收到媳妇送的花，问今天是什么日子，她说不是什么日子也可以送花啊。嗯，感动到了。是的，不是什么日子也是日子。”</p>
+       <div class="clear"></div>
+   </div>
+</body>
+</html>

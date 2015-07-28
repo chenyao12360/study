@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body,div,ul,li{margin: 0; padding: 0; list-style: none; }
+        .list{ width: 400px; margin: 20px auto; padding: 5px; /*background: #fff000;*/ border: 1px solid #ccc; }
+        .list ul li{ height: 30px; line-height: 30px; text-align: center; cursor: pointer; border-bottom: 1px dashed #cccccc; }
+    </style>
+
+</head>
+<body>
+<div class="list" id="list">
+    <ul>
+        <li>重温习近平内部说过的反腐狠话</li>
+        <li>李克强谈大病保险:兜住社会"最</li>
+        <li>重温习近平内部说过的反腐狠话</li>
+        <li>李克强谈大病保险:兜住社会"最</li>
+        <li>重温习近平内部说过的反腐狠话</li>
+        <li>李克强谈大病保险:兜住社会"最</li>
+        <li>重温习近平内部说过的反腐狠话</li>
+        <li>李克强谈大病保险:兜住社会"最</li>
+        <li>重温习近平内部说过的反腐狠话</li>
+        <li>李克强谈大病保险:兜住社会"最</li>
+        <li>重温习近平内部说过的反腐狠话</li>
+        <li>李克强谈大病保险:兜住社会"最</li>
+        <li>重温习近平内部说过的反腐狠话</li>
+        <li>李克强谈大病保险:兜住社会"最</li>
+
+
+    </ul>
+</div>
+
+</body>
+<ml>
+    <script>
+        var lis = document.getElementById("list").getElementsByTagName("li");
+        //console.log(lis);
+        for(var i=0; i<lis.length; i++){
+            if(i%2 == 1){
+                lis[i].style.background = "red";
+            }else{
+                lis[i]['style']['background'] = "green";
+            }
+        }
+        function tab(eventType){ //hover click
+            body[eventType] = function (){
+
+            }
+
+        }
+    </script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>样式层叠问题</title>
+    <style>
+
+        p{
+            font-size: 12px;color: #a6a1e1;
+            text-decoration: underline;
+        }
+        p.bl{
+            color: #ddb933
+        }
+
+
+
+        }
+        span{
+            color: #80ffe9;}
+        #p3{
+            color:red;
+        }
+        #p4{
+            color: #312aff;
+        }
+        p{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+<p>当青春与校园再次相遇匆匆那年错过的，京东派我们帮你找回来</p>
+
+<p class="bl" >当青春与校园再次相遇匆匆那年错过的，京东派我们帮你找回来</p>
+
+<p id="p3">当青春与校园再次相遇匆匆那年错过的，京东派我们帮你找回来</p>
+
+<p>当青春与校园再次相遇匆匆那年错过的，京东派我们帮你找回来</p>
+<span id="p3">当青春与校园再次相遇匆匆那年错过的，京东派我们帮你找回来</span>
+<p id="p4">知识点
+
+</p>
+</body>
+</html>
